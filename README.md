@@ -1,6 +1,6 @@
 # ADSearch
-```
 <span style="color:green">
+```
 ╔═══════════════════════════════════════════════════════════════╗
 ║                                                               ║
 ║      _    ____       ____  _____    _    ____   ____ _   _    ║
@@ -12,8 +12,8 @@
 ╠═══════════════════════════════════════════════════════════════╣
 ║                User / Computer OU Lookup Tool                 ║
 ╚═══════════════════════════════════════════════════════════════╝
-</span>
 ```
+</span>
 <p>This Active Directory tool offers an interactive user/computer OU lookup that compares results using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. ADSearch installs and uses the ActiveDirectory module to find the (SamAccountName) username and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets the retreive the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory enviroment.</p>
 <br />
 
