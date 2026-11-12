@@ -21,7 +21,7 @@ The script compares the two location names without regard to case. Identical nam
 <br /><br />
 
 | Score | Result | Color |
-| :---         |     :---:      |          ---: |
+|  :---:          |     :---:      |           :---:  |
 | 100%	| Exact Location Match |	Green |
 | 80–99%	| Likely Same Location |	Green |
 | 50–79%	| Possibly Related Location |	Yellow |
