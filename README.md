@@ -49,7 +49,7 @@ ADExcelSearch works by placing the script in the same directory as the Excel wor
 Returns the results of the fuzzy Levenshteinin matching in a percentage.
 
 <ins>OU Match Reason</ins><br />
-Returns match result along with the user and computer location. 
+Returns match result along with the user and computer location or the  error result for that lookup (ex. ERROR: Computer Lookup)
 
 <ins>AD_Name</ins><br />
 Returns the username (SamAccountName) or error result for that lookup (ex. ERROR: Disabled).
