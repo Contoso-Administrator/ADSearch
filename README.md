@@ -45,7 +45,8 @@ ADSearch_Excel works by placing the script in the same directory as the Excel wo
 <br /><br />
 
 >[!CAUTION]
->The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> for 'ADSearch_Excel.ps1' to work.
+>The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> for ADSearch_Excel to work.
+
 <br /><br />
 
 <ins>OU Match Percentage</ins><br />
