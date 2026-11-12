@@ -44,7 +44,7 @@ The script compares the two location names without regard to case. Identical nam
 ADSearch_Excel works by placing the script in the same directory as the Excel workbook you are needing to add ADSearch results in and can be ran by starting the script with a domain account that can read user and computer objects in Active Directory. The script will fail if more than one Excel workbook is in the same directory as the script and will import/install all dependencies (Install-Module and ImportExcel). The script will then add the columns 'OU Match Percentage', 'OU Match Reason', and 'AD_Name' to each row of the workbook. After the script is done, it will add a worksheet called 'ADSearch_ErrorLog' with verbose error logs of the returned results.
 <br /><br />
 
-$${\color{red} The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> for ADSearch_Excel to work.}$$
+$${\color{red}The variable $DomainSuffix must be set to the suffix of your domain in <ins>line 7</ins> for ADSearch_Excel to work.}$$
 <br /><br />
 
 <ins>OU Match Percentage</ins><br />
