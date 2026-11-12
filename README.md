@@ -47,7 +47,7 @@ ADSearch_Excel works by placing the script in the same directory as the Excel wo
 >[!CAUTION]
 >The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> for ADSearch_Excel to work.
 
-<br /><br />
+<br />
 
 <ins>OU Match Percentage</ins><br />
 Returns the results of the fuzzy Levenshteinin matching in a percentage.
