@@ -28,7 +28,7 @@ The script compares the two location names without regard to case. Identical nam
 | 1–49% |	Weak Match |	Red |
 | 0% | No Match |	Red |
 
-<br /><br />
+<br />
 
 <h3>Tuning</h3>
 
