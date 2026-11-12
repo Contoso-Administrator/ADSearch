@@ -59,13 +59,13 @@ Returns the username (SamAccountName) or error result for that lookup (ex. ERROR
 The headers used for matching can edited by changing the variables below, along with the score range. 
 <br /><br />
 
-- Set the $DomainSuffix variable for the suffix of your domain <ins>line 7</ins>.
-- Set the $FullNameHeader variable for the header that has full user names (ex. John Doe) <ins>line 2</ins>.
-- Set the $$HostnameHeader variable for the header that has the computer hostname (ex. DESKTOP-1234) <ins>line 3</ins>.
-- Set the $ADNameHeader variable for what header name for AD results are returned in <ins>line 4</ins>.
-- Set the $PercentHeader variable for what header name your percentage results are returned in <ins>line 5</ins>.
-- Set the $ReasonHeader variable for what header name your match reasons are returned in <ins>line 6</ins>.
-- Set the $DomainSuffix variable to the suffix of your domain <ins>line 7</ins>.
+- Set the <ins>$DomainSuffix</ins> variable for the suffix of your domain <ins>line 7</ins>.
+- Set the <ins>$FullNameHeader</ins> variable for the header that has full user names (ex. John Doe) <ins>line 2</ins>.
+- Set the <ins>$HostnameHeader</ins> variable for the header that has the computer hostname (ex. DESKTOP-1234) <ins>line 3</ins>.
+- Set the <ins>$ADNameHeader</ins> variable for what header name for AD results are returned in <ins>line 4</ins>.
+- Set the <ins>$PercentHeader</ins> variable for what header name your percentage results are returned in <ins>line 5</ins>.
+- Set the <ins>$ReasonHeader</ins> variable for what header name your match reasons are returned in <ins>line 6</ins>.
+- Set the <ins>$DomainSuffix</ins> variable to the suffix of your domain <ins>line 7</ins>.
 - If you need to change the score range, it can be edited in <ins>lines 109-112</ins>.
 <br />
 
