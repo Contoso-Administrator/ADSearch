@@ -67,7 +67,7 @@ The headers used for matching can edited by changing the variables below, along 
 - Set the $ReasonHeader variable for what header name your match reasons are returned in <ins>line 6</ins>.
 - Set the $DomainSuffix variable to the suffix of your domain <ins>line 7</ins>.
 - If you need to change the score range, it can be edited in <ins>lines 109-112</ins>.
-
+<br />
 
 ><h3>Requirements</h3>
 >
