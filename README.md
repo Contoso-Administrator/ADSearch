@@ -1,18 +1,44 @@
 # ADSearch
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║      _    ____       ____  _____    _    ____   ____ _   _    ║
+║     / \  |  _ \     / ___|| ____|  / \  |  _ \ / ___| | | |   ║
+║    / _ \ | | | |    \___ \|  _|   / _ \ | |_) | |   | |_| |   ║
+║   / ___ \| |_| |     ___) | |___ / ___ \|  _ <| |___|  _  |   ║
+║  /_/   \_\____/     |____/|_____/_/   \_\_| \_\\____|_| |_|   ║
+║                                                               ║
+╠═══════════════════════════════════════════════════════════════╣
+║                User / Computer OU Lookup Tool                 ║
+╚═══════════════════════════════════════════════════════════════╝
 
-<p>This Active Directory tool offers an interactive user/computer OU lookup that compares results using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location.
+<p>This Active Directory tool offers an interactive user/computer OU lookup that compares results using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. ADSearch installs and uses the ActiveDirectory module to find the (SamAccountName) username and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets the retreive the CanonicalNames for matching.</p>
+<br />
 
-Score	  Result	                   Color
-100%	  Exact Location Match	     Green
-80–99%	Likely Same Location	     Green
-50–79%	Possibly Related Location	 Yellow
-1–49%	  Weak Match	               Red
-0%	    No Match	                 Red
+<h3>Matching</h3>
+The script compares the two location names without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein edit distance and turns it into a similarity percentage, then rates the result:
 
-<br /><br />
+| Score | Result | Color |
+| :---         |     :---:      |          ---: |
+|100%	Exact Location Match |	Green |
+| 80–99%	| Likely Same Location |	Green |
+| 50–79%	| Possibly Related Location |	Yellow |
+| 1–49% |	Weak Match |	Red |
+| 0% | No Match |	Red |
 
-<h3>Variables to change</h3>
-You will need to customize this script to specify the local admin that is being used (because Task Scheduler triggers the script based on the login of that account), configure installs, and set what location the computer is domain joined to:
+
+Score	Result	Color
+100%	Exact Location Match	Green
+80–99%	Likely Same Location	Green
+50–79%	Possibly Related Location	Yellow
+1–49%	Weak Match	Red
+0%	No Match	Red
+
+100%	
+80–99%	
+50–79%	
+1–49%	
+0%
+
 <br /><br /><br />
 
 <ins>PreDomainRebuild.ps1</ins>
