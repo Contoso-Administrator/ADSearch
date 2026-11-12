@@ -17,7 +17,7 @@
 
 <h3>Matching</h3>
 The script compares the two location names without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein edit distance and turns it into a similarity percentage, then rates the result:
-<br />
+<br /><br />
 
 | Score | Result | Color |
 | :---         |     :---:      |          ---: |
