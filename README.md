@@ -29,7 +29,7 @@ The script compares the two location names without regard to case. Identical nam
 | 0% | No Match |	Red |
 
 <br />
-<ins>*Tuning*</ins>
+<ins><h3>Tuning</h3></ins>
 
 - If you need to edit the matching to tune it to your environment, the color can be edited in <ins>lines 201-204</ins>.
 - 
