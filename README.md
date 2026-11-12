@@ -43,6 +43,8 @@ The script compares the two location names without regard to case. Identical nam
 
 ADSearch_Excel works by placing the script in the same directory as the Excel workbook you are needing to add ADSearch results in and can be ran by starting the script with a domain account that can read user and computer objects in Active Directory. The script will fail if more than one Excel workbook is in the same directory as the script and will import/install all dependencies (Install-Module and ImportExcel). The script will then add the columns 'OU Match Percentage', 'OU Match Reason', and 'AD_Name' to each row of the workbook. After the script is done, it will add a worksheet called 'ADSearch_ErrorLog' with verbose error logs of the returned results.
 <br />
+The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> for ADSearch_Excel to work.
+<br />
 
 <ins>OU Match Percentage</ins><br />
 Returns the results of the fuzzy Levenshteinin matching in a percentage.
@@ -59,7 +61,7 @@ Returns the username (SamAccountName) or error result for that lookup (ex. ERROR
 The headers used for matching can edited by changing the variables below, along with the score range. 
 <br /><br />
 
-- Set the <ins>$DomainSuffix</ins> variable for the suffix of your domain <ins>line 7</ins>.
+- Set the <ins>$DomainSuffix</ins> variable for the suffix of your domain <ins>line 7</ins>. This must be done or the script will not work.
 - Set the <ins>$FullNameHeader</ins> variable for the header that has full user names (ex. John Doe) <ins>line 2</ins>.
 - Set the <ins>$HostnameHeader</ins> variable for the header that has the computer hostname (ex. DESKTOP-1234) <ins>line 3</ins>.
 - Set the <ins>$ADNameHeader</ins> variable for what header name for AD results are returned in <ins>line 4</ins>.
