@@ -13,7 +13,7 @@
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 
-<p>This Active Directory toolkit offers an interactive user/computer OU comparisons using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch and ADSearch_Excel works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. Each tool installs and uses the ActiveDirectory module to find the username (SamAccountName) and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets to the retreive the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory enviroment before deploying.</p>
+<p>This Active Directory toolkit offers user/computer OU comparisons using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch and ADSearch_Excel works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. Each tool installs and uses the ActiveDirectory module to find the username (SamAccountName) and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets to the retreive the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory enviroment before deploying.</p>
 <br />
 
 <h3>Matching</h3>
