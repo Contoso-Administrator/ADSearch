@@ -36,6 +36,7 @@ The script compares the two location names without regard to case. Identical nam
 - If you need to change the score range, it can be edited in <ins>lines 133-137</ins>. 
 
 <br />
+
 # ADExcelSearch
 
 <p>ADExcelSearch is the Excel version of the ADSearch lookup tool and can be an effective tool for auditing computer locations within Active Directory. It works by opening a workbook, finding each user listed in the 'Last Login' column, and looks up the computer in that row's 'Hostname' column. It then compares the computer and user OUs to estimate matching results. It is recommended to tune this tool (tuned by default to work with ServiceNow CMDB exports).
