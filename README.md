@@ -28,7 +28,7 @@ The script compares the two location names without regard to case. Identical nam
 | 1–49% |	Weak Match |	Red |
 | 0% | No Match |	Red |
 
-<br /><br /><br />
+<br /><br />
 
 <h3>Tuning</h3>
 
@@ -42,7 +42,8 @@ The script compares the two location names without regard to case. Identical nam
 
 <p>ADExcelSearch is the Excel version of the ADSearch lookup tool and can be an effective tool for auditing computer locations within Active Directory. It works by opening a workbook, finding each user listed in the 'Last Login' column, and looks up the computer in that row's 'Hostname' column. It then compares the computer and user OUs to estimate matching results in a new column. It is recommended to tune this tool (tuned by default to work with ServiceNow CMDB exports) to your enviroment(s) and workflow.
 
-ADExcelSearch works by placing the script in the same directory as the Excel workbook you are needing to add ADSearch results in and can be ran by starting the script with a domain account that can read user and computer objects in Active Directory. The script will fail if more than one Excel workbook is in the same directory as the script and will import/install all dependencies (Install-Module and ImportExcel). The script will then add the columns 'OU Match Percentage', 'OU Match Reason', and 'AD_Name' to each row of the workbook. 
+ADExcelSearch works by placing the script in the same directory as the Excel workbook you are needing to add ADSearch results in and can be ran by starting the script with a domain account that can read user and computer objects in Active Directory. The script will fail if more than one Excel workbook is in the same directory as the script and will import/install all dependencies (Install-Module and ImportExcel). The script will then add the columns 'OU Match Percentage', 'OU Match Reason', and 'AD_Name' to each row of the workbook.
+<br />
 
 <ins>OU Match Percentage</ins><br />
 Returns the results of the fuzzy Levenshteinin matching in a percentage.
