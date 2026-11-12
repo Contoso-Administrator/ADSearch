@@ -43,13 +43,13 @@ The script compares the two location names without regard to case. Identical nam
 
 ADExcelSearch works by placing the script in the same directory as the Excel workbook you are needing to add ADSearch results in and can be ran by starting the script with a domain account that can read user and computer objects in Active Directory. The script will fail if more than one Excel workbook is in the same directory as the script and will import/install all dependencies (Install-Module and ImportExcel). The script will then add the columns 'OU Match Percentage', 'OU Match Reason', and 'AD_Name' to each row of the workbook. 
 
-<ins>OU Match Percentage</ins>
+<ins>OU Match Percentage</ins><br />
 Returns the results of the fuzzy Levenshteinin matching in a percentage.
 
-<ins>OU Match Reason</ins>
+<ins>OU Match Reason</ins><br />
 Returns match result along with the user and computer location. 
 
-<ins>AD_Name</ins>
+<ins>AD_Name</ins><br />
 Returns the username (SamAccountName) or error result for that lookup (ex. ERROR: Disabled).
 
 
