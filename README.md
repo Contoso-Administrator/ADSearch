@@ -13,7 +13,7 @@
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 
-<p>This Active Directory tool offers an interactive user/computer OU lookup that compares results using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. ADSearch installs and uses the ActiveDirectory module to find the username (SamAccountName) and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets to the retreive the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory enviroment before deploying.</p>
+<p>This Active Directory toolkit offers an interactive user/computer OU comparisons using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch and ADExcelSearch works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. Each tool installs and uses the ActiveDirectory module to find the username (SamAccountName) and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets to the retreive the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory enviroment before deploying.</p>
 <br />
 
 <h3>Matching</h3>
@@ -39,18 +39,29 @@ The script compares the two location names without regard to case. Identical nam
 
 # ADExcelSearch
 
-<p>ADExcelSearch is the Excel version of the ADSearch lookup tool and can be an effective tool for auditing computer locations within Active Directory. It works by opening a workbook, finding each user listed in the 'Last Login' column, and looks up the computer in that row's 'Hostname' column. It then compares the computer and user OUs to estimate matching results. It is recommended to tune this tool (tuned by default to work with ServiceNow CMDB exports).
+<p>ADExcelSearch is the Excel version of the ADSearch lookup tool and can be an effective tool for auditing computer locations within Active Directory. It works by opening a workbook, finding each user listed in the 'Last Login' column, and looks up the computer in that row's 'Hostname' column. It then compares the computer and user OUs to estimate matching results in a new column. It is recommended to tune this tool (tuned by default to work with ServiceNow CMDB exports) to your enviroment(s) and workflow.
 
-ADExcelSearch works 
+ADExcelSearch works by placing the script in the same directory as the Excel workbook you are needing to add ADSearch results in and can be ran by starting the script with a domain account that can read user and computer objects in Active Directory. The script will fail if more than one Excel workbook is in the same directory as the script and will import/install all dependencies (Install-Module and ImportExcel). The script will then add the columns 'OU Match Percentage', 'OU Match Reason', and 'AD_Name' to each row of the workbook. 
 
-</p>
+<ins>OU Match Percentage</ins>
+Returns the results of the fuzzy Levenshteinin matching in a percentage.
 
-<ins>PreDomainRebuild.ps1</ins>
+<ins>OU Match Reason</ins>
+Returns match result along with the user and computer location. 
+
+<ins>AD_Name</ins>
+Returns the username (SamAccountName) or error result for that lookup (ex. ERROR: Disabled).
+
+
+<br />
+<h3>Tuning</h3>
+
+
 
 ><h3>Requirements</h3>
 >
 >- A domain account that can read user and computer objects.
 >- A domain-joined Windows machine with the 'RSAT: Active Directory module' installed.
 >- Access to the PowerShell Gallery, the script replies on Install-Module and ImportExcel as a dependency.
->- A Excek workbook with 'Last Login' and 'Hostname' headers in row 1. Last Login should contain users' full names, such as John Doe.
+>- An Excel workbook (.xlsx) with 'Last Login' and 'Hostname' headers in row 1. Last Login should contain users' full names, such as John Doe.
 >- Windows PowerShell 5.1 or later.
