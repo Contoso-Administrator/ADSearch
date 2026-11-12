@@ -28,7 +28,7 @@ The script compares the two location names without regard to case. Identical nam
 | 1–49% |	Weak Match |	Red |
 | 0% | No Match |	Red |
 
-<br />
+<br /><br />
 
 - If you need to edit the matching to tune it to your environment, the color can be edited in <ins>lines 201-204</ins>.
 
