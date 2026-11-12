@@ -4,7 +4,7 @@
 
 The main advantage of this script is that it stores domain credentials as a secured (AES) string (which are then deleted as part of the final step) and there are loops in place to ensure domain connectivity for the domain join and group policy update (the connectivity loops also test domain credentials and allow you to re-enter them if invalid, pre-domain join). This is done because VPN connection quality can very depending on the network and can sometimes take awhile to connect. Below is a general overview of the domain rebuild and what to expect during each phase of the process:</p><br />
 
-<ins>Score	  Result	                   Color</ins>
+Score	  Result	                   Color
 100%	  Exact Location Match	     Green
 80–99%	Likely Same Location	     Green
 50–79%	Possibly Related Location	 Yellow
