@@ -1,5 +1,6 @@
 # ADSearch
 ```
+<span style="color:green">
 ╔═══════════════════════════════════════════════════════════════╗
 ║                                                               ║
 ║      _    ____       ____  _____    _    ____   ____ _   _    ║
@@ -11,12 +12,13 @@
 ╠═══════════════════════════════════════════════════════════════╣
 ║                User / Computer OU Lookup Tool                 ║
 ╚═══════════════════════════════════════════════════════════════╝
+</span>
 ```
-<p>This Active Directory tool offers an interactive user/computer OU lookup that compares results using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. ADSearch installs and uses the ActiveDirectory module to find the (SamAccountName) username and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets the retreive the CanonicalNames for matching.</p>
+<p>This Active Directory tool offers an interactive user/computer OU lookup that compares results using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. ADSearch installs and uses the ActiveDirectory module to find the (SamAccountName) username and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets the retreive the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory enviroment.</p>
 <br />
 
 <h3>Matching</h3>
-The script compares the two location names without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein edit distance and turns it into a similarity percentage, then rates the result:
+The script compares the two location names without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein distance and turns it into a similarity percentage, then rates the result:
 <br /><br />
 
 | Score | Result | Color |
@@ -27,19 +29,10 @@ The script compares the two location names without regard to case. Identical nam
 | 1–49% |	Weak Match |	Red |
 | 0% | No Match |	Red |
 
+<br />
+- If you need to edit the matching to tune it to your environment, the color can be edited in <ins>lines 201-204</ins>.
+- If you need to edit the score range, it can be changed in <ins>lines 133-137</ins>. 
 
-Score	Result	Color
-100%	Exact Location Match	Green
-80–99%	Likely Same Location	Green
-50–79%	Possibly Related Location	Yellow
-1–49%	Weak Match	Red
-0%	No Match	Red
-
-100%	
-80–99%	
-50–79%	
-1–49%	
-0%
 
 <br /><br /><br />
 
