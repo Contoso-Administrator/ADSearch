@@ -41,7 +41,7 @@ The script compares the two location names without regard to case. Identical nam
 
 <p>ADSearch_Excel is the Excel version of the ADSearch lookup tool and can be an effective tool for auditing computer locations within Active Directory. It works by opening a workbook, finding each user listed in the 'Last Login' column, and looks up the computer in that row's 'Hostname' column. The script then compares the computer and user OUs to estimate matching results in a new column. It is recommended to tune the matching of this tool and apply it to your environment(s) and workflow (ADSearch_Excel is setup by default to work with ServiceNow CMDB exports).
 
-ADSearch_Excel works by placing the script in the same directory as the Excel workbook you are needing to add ADSearch results in and can be ran by starting the script with a domain account that can read user and computer objects in Active Directory. The script will fail if more than one Excel workbook is in the same directory as the script and will import/install all dependencies (Install-Module and ImportExcel). The script will then add the columns 'OU Match Percentage', 'OU Match Reason', and 'AD_Name' to each row of the workbook.
+ADSearch_Excel works by placing the script in the same directory as the Excel workbook you are needing to add ADSearch results in and can be ran by starting the script with a domain account that can read user and computer objects in Active Directory. The script will fail if more than one Excel workbook is in the same directory as the script and will import/install all dependencies (Install-Module and ImportExcel). The script will then add the columns 'OU Match Percentage', 'OU Match Reason', and 'AD_Name' to each row of the workbook. After the script is done, it will add a worksheet called 'ADSearch_ErrorLog' with verbose error logs of the returned results.
 <br />
 
 <ins>OU Match Percentage</ins><br />
@@ -66,7 +66,7 @@ The headers used for matching can edited by changing the variables below, along 
 - Set the $PercentHeader variable for what header name your percentage results are returned in <ins>line 5</ins>.
 - Set the $ReasonHeader variable for what header name your match reasons are returned in <ins>line 6</ins>.
 - Set the $DomainSuffix variable to the suffix of your domain <ins>line 7</ins>.
-- If you need to change the score range, it can be edited in <ins>lines 133-137</ins>.
+- If you need to change the score range, it can be edited in <ins>lines 109-112</ins>.
 
 
 ><h3>Requirements</h3>
