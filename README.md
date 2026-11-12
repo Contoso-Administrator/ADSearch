@@ -30,6 +30,7 @@ The script compares the two location names without regard to case. Identical nam
 
 <br />
 - If you need to edit the matching to tune it to your environment, the color can be edited in <ins>lines 201-204</ins>.
+
 - If you need to edit the score range, it can be changed in <ins>lines 133-137</ins>. 
 
 
