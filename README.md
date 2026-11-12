@@ -57,7 +57,7 @@ Returns the username (SamAccountName) or error result for that lookup (ex. ERROR
 <br />
 <h3>Tuning ADSearch_Excel.ps1</h3>
 The headers used for matching can edited by changing the variables below, along with the score range. 
-<br />
+<br /><br />
 
 - Set the $DomainSuffix variable for the suffix of your domain <ins>line 7</ins>.
 - Set the $FullNameHeader variable for the header that has full user names (ex. John Doe) <ins>line 2</ins>.
