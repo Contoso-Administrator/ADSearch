@@ -58,6 +58,9 @@ Returns the username (SamAccountName) or error result for that lookup (ex. ERROR
 <br />
 <h3>Tuning</h3>
 
+- If you need to change...
+
+- If you need to change...
 
 
 ><h3>Requirements</h3>
