@@ -72,6 +72,7 @@ The headers used for matching can edited by changing the variables below, along 
 ><h3>Requirements</h3>
 >
 >- A domain account that can read user and computer objects.
+>- For ADSearch_Excel.ps1 to work, the $DomainSuffix variable needs to be edited to your domain <ins>line 7</ins>.
 >- A domain-joined Windows machine with the 'RSAT: Active Directory module' installed.
 >- Access to the PowerShell Gallery, the script replies on Install-Module and ImportExcel as a dependency.
 >- An Excel workbook (.xlsx) with 'Last Login' and 'Hostname' headers in row 1. Last Login should contain users' full names, such as John Doe.
