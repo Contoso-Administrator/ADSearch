@@ -31,6 +31,7 @@ The script compares the two location names without regard to case. Identical nam
 <br />
 
 <h3>Tuning ADSearch.ps1</h3>
+The variables used for color matching and score range can edited by changing the variables below. 
 
 - If you need to change the color matching to tune it to your environment, it can be edited in <ins>lines 201-204</ins>.
 - If you need to change the score range, it can be edited in <ins>lines 133-137</ins>. 
