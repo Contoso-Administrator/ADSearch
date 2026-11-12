@@ -13,7 +13,7 @@
 ╚═══════════════════════════════════════════════════════════════╝
 ```
 </span>
-<p>This Active Directory tool offers an interactive user/computer OU lookup that compares results using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. ADSearch installs and uses the ActiveDirectory module to find the (SamAccountName) username and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets the retreive the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory enviroment.</p>
+<p>This Active Directory tool offers an interactive user/computer OU lookup that compares results using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. ADSearch installs and uses the ActiveDirectory module to find the username (SamAccountName) and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets to the retreive the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory enviroment before deploying.</p>
 <br />
 
 <h3>Matching</h3>
@@ -28,10 +28,11 @@ The script compares the two location names without regard to case. Identical nam
 | 1–49% |	Weak Match |	Red |
 | 0% | No Match |	Red |
 
-<br /><br />
+<br />
+<ins>**Tuning**</ins>
 
 - If you need to edit the matching to tune it to your environment, the color can be edited in <ins>lines 201-204</ins>.
-
+- 
 - If you need to edit the score range, it can be changed in <ins>lines 133-137</ins>. 
 
 
