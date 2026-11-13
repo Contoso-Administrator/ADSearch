@@ -50,7 +50,7 @@ ADSearch_Excel works by placing the script in the same directory as the Excel wo
 <br /><br />
 
 >[!CAUTION]
->The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> for ADSearch_Excel to work. This is because this portion of the tool is designed for multi-domain enviroments.
+>The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> for ADSearch_Excel to work. This is because this portion of the tool is designed to be able to work with multi-domain environments.
 
 <br />
 
