@@ -41,7 +41,7 @@ The variables used for color matching and score ranges can edited by changing th
 <br /><br />
 
 - If you need to change the color matching to tune it to your environment, it can be edited in <ins>lines 201-204</ins>.
-- If you need to change the score range, it can be edited in <ins>lines 133-137</ins>. 
+- If you need to change the score range, it can be edited in <ins>lines 133-137</ins> (depending on complexity of the user/computer OU structure.
 <br />
 
 # ADSearch_Excel
@@ -77,7 +77,7 @@ The headers used for matching can edited by changing the variables below, along 
 - Set the <ins>$FullNameHeader</ins> variable for the workbook header that has full user names (ex. John Doe) <ins>line 2</ins>.
 - Set the <ins>$HostnameHeader</ins> variable for the workbook header that has the computer hostname (ex. DESKTOP-1234) <ins>line 3</ins>.
 - Set the <ins>$DomainSuffix</ins> variable to the suffix of your domain <ins>line 7</ins>.
-- If you need to change the score range, it can be edited in <ins>lines 109-112</ins>.
+- If you need to change the score range, it can be edited in <ins>lines 109-112</ins> (depending on complexity of the user/computer OU structure.
 <br />
 
 ><h3>Requirements</h3>
