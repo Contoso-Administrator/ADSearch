@@ -17,6 +17,9 @@
 <p>This Active Directory toolkit offers user/computer OU comparisons using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's OU. ADSearch and ADSearch_Excel works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. Each tool installs and uses the ActiveDirectory module to find the username (SamAccountName) and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets to the retrieve the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory environment before deploying (depending on your domain's OU structure and depth, it is designed for a State/Site structured domain).</p>
 <br />
 
+>[!NOTE]
+>ADSearch defaults to the parent domain of the user and is not intended for multi-domain environments (ADSearch_Excel can be used for multi-domain environments). 
+
 <h3>Matching</h3>
 The script compares the two location names without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein distance and turns it into a similarity percentage, then rates the result:
 <br /><br />
@@ -59,7 +62,6 @@ Returns match result along with the user and computer location or the  error res
 
 <ins>AD_Name</ins><br />
 Returns the username (SamAccountName) or error result for that lookup (ex. ERROR: Disabled).
-
 
 <br />
 <h3>Tuning ADSearch_Excel.ps1</h3>
