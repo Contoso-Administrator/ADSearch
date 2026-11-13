@@ -51,9 +51,6 @@ The variables used for color matching and score ranges can edited by changing th
 ADSearch_Excel works by placing the script in the same directory as the Excel workbook you are needing to add ADSearch results in and can be ran by starting the script with a domain account that can read user and computer objects in Active Directory. The script will fail if more than one Excel workbook is in the same directory as the script and will import/install all dependencies (Install-Module and ImportExcel). The script will then add the columns 'OU Match Percentage', 'OU Match Reason', and 'AD_Name' to each row of the workbook. After the script is done, it will add a worksheet called 'ADSearch_ErrorLog' with verbose error logs of the returned results.
 <br /><br />
 
->[!CAUTION]
->The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> for ADSearch_Excel to work. This is because this portion of the tool is designed to be able to work with multi-domain environments.
-
 <br />
 
 <ins>OU Match Percentage</ins><br />
@@ -64,6 +61,9 @@ Returns match result along with the user and computer location or the  error res
 
 <ins>AD_Name</ins><br />
 Returns the username (SamAccountName) or error result for that lookup (ex. ERROR: Disabled).
+
+>[!CAUTION]
+>The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> for ADSearch_Excel to work. This is because this portion of the tool is designed to be able to work with multi-domain environments.
 
 <br />
 <h3>Tuning ADSearch_Excel.ps1</h3>
