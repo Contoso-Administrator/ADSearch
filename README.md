@@ -50,6 +50,7 @@ The variables used for color matching and score ranges can edited by changing th
   
 >[!NOTE]
 >ADSearch_Excel is setup by default to work with ServiceNow CMDB (.xlsx) exports.
+<br />
 
 ADSearch_Excel works by placing the script in the same directory as the Excel workbook you are needing to add ADSearch results in and can be ran by starting the script with a domain account that can read user and computer objects in Active Directory. The script will fail if more than one Excel workbook is in the same directory as the script. ADSearch_Excel will import/install all required dependencies (Install-Module and ImportExcel) at start. The script will then add the columns 'OU Match Percentage', 'OU Match Reason', and 'AD_Name' to each row of the workbook for easy auditing. After the script is done, it will then add a worksheet called 'ADSearch_ErrorLog' with verbose logs of the results.
 <br /><br />
