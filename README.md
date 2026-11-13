@@ -20,6 +20,8 @@
 >[!NOTE]
 >ADSearch defaults to the parent domain of the user and is not intended for multi-domain environments (ADSearch_Excel can be used for multi-domain environments). 
 
+<br />
+
 <h3>Matching</h3>
 The script compares the two location names without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein distance and turns it into a similarity percentage, then rates the result:
 <br /><br />
