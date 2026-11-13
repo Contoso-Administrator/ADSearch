@@ -74,8 +74,8 @@ Returns the username (SamAccountName) or error result for that lookup (ex. ERROR
 The headers used for matching can edited by changing the variables below, along with the score range:
 <br /><br />
 
-- Set the <ins>$FullNameHeader</ins> variable for the header that has full user names (ex. John Doe) <ins>line 2</ins>.
-- Set the <ins>$HostnameHeader</ins> variable for the header that has the computer hostname (ex. DESKTOP-1234) <ins>line 3</ins>.
+- Set the <ins>$FullNameHeader</ins> variable for the workbook header that has full user names (ex. John Doe) <ins>line 2</ins>.
+- Set the <ins>$HostnameHeader</ins> variable for the workbook header that has the computer hostname (ex. DESKTOP-1234) <ins>line 3</ins>.
 - Set the <ins>$DomainSuffix</ins> variable to the suffix of your domain <ins>line 7</ins>.
 - If you need to change the score range, it can be edited in <ins>lines 109-112</ins>.
 <br />
