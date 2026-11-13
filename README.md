@@ -67,7 +67,7 @@ Returns the username (SamAccountName) or error result for that lookup (ex. ERROR
 <br />
 
 >[!CAUTION]
->The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> for ADSearch_Excel to work. This is because this portion of the tool is designed to be able to work with multi-domain environments.
+>The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <ins>line 7</ins> of ADSearch_Excel.ps1. This is because this portion of the tool is designed to be able to work with multi-domain environments.
 
 <br />
 <h3>Tuning ADSearch_Excel.ps1</h3>
