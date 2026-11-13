@@ -46,7 +46,7 @@ The variables used for color matching and score ranges can edited by changing th
 
 # ADSearch_Excel
 
-<p>ADSearch_Excel is the Excel version of the ADSearch lookup tool and can be an effective tool for auditing computer locations within Active Directory. It works by opening a workbook, finding each user listed in the 'Last Login' column, and looks up the computer in that row's 'Hostname' column. The script then compares the computer and user OUs to estimate matching results in a new column. It is recommended to tune the matching of this tool and apply it to your environment(s) and workflow.
+<p>ADSearch_Excel is the Excel version of the ADSearch lookup tool and can be an effective tool for auditing computer locations within Active Directory. It works by opening a workbook, finding each user listed in the 'Last Login' column (by searching the workbook for that header), and looks up the computer in that row's 'Hostname' column. The script then compares the computer and user OUs to estimate matching results in a new column. It is recommended to tune the matching of this tool and apply it to your environment(s) and workflow.
   
 >[!NOTE]
 >ADSearch_Excel is setup by default to work with ServiceNow CMDB (.xlsx) exports.
@@ -86,5 +86,5 @@ The headers used for matching can edited by changing the variables below, along 
 >- For ADSearch_Excel.ps1 to work, the $DomainSuffix variable needs to be edited to your domain <ins>line 7</ins>.
 >- A domain-joined Windows machine with the 'RSAT: Active Directory module' installed.
 >- Access to the PowerShell Gallery, the script replies on Install-Module and ImportExcel as a dependency.
->- An Excel workbook (.xlsx) with 'Last Login' and 'Hostname' headers in row 1. Last Login should contain users' full names, such as John Doe.
+>- An Excel workbook (.xlsx) with 'Last Login' and 'Hostname' headers (if variables are left unconfigured) in row 1. 'Last Login' should contain users full names (John Doe). 'Hostname'.
 >- Windows PowerShell 5.1 or later.
