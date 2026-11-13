@@ -35,8 +35,8 @@ The script compares the two location names without regard to case. Identical nam
 <br />
 
 <h3>Tuning ADSearch.ps1</h3>
-The variables used for color matching and score ranges can edited by changing the variables below. 
-<br /><br /><br />
+The variables used for color matching and score ranges can edited by changing the variables below:
+<br /><br />
 
 - If you need to change the color matching to tune it to your environment, it can be edited in <ins>lines 201-204</ins>.
 - If you need to change the score range, it can be edited in <ins>lines 133-137</ins>. 
@@ -65,8 +65,8 @@ Returns the username (SamAccountName) or error result for that lookup (ex. ERROR
 
 <br />
 <h3>Tuning ADSearch_Excel.ps1</h3>
-The headers used for matching can edited by changing the variables below, along with the score range. 
-<br /><br /><br />
+The headers used for matching can edited by changing the variables below, along with the score range:
+<br /><br />
 
 - Set the <ins>$DomainSuffix</ins> variable for the suffix of your domain <ins>line 7</ins>. This must be done or the script will not work.
 - Set the <ins>$FullNameHeader</ins> variable for the header that has full user names (ex. John Doe) <ins>line 2</ins>.
