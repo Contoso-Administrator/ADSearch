@@ -14,7 +14,7 @@
 ```
 
 # ADSearch
-<p>This Active Directory toolkit offers user/computer OU comparisons using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's (for IT audits and continual asset management). ADSearch and ADSearch_Excel works by looking up a user and a computer in Active Directory, then compares their OU paths to estimate whether they belong to the same location. Each tool installs and uses the ActiveDirectory module to find the username (SamAccountName) and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets to the retrieve the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory environment before deploying (depending on your domain's OU structure and depth, it is designed for a ~/State/Site/Facility structured domain).</p>
+<p>This Active Directory toolkit offers user/computer OU comparisons using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's (for large enterprise IT audits/asset management). Both ADSearch and ADSearch_Excel work by looking up a user and a computer in Active Directory, then compare their OU paths to estimate whether they belong to the same location (it is designed for a three-level OU hierarchy, with separate forests for computers and users). Each tool installs and uses the ActiveDirectory module to find the username (SamAccountName) and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets to the retrieve the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory environment before deploying (depending on the similarity of your domain's OU structure).</p>
 <br />
 
 >[!NOTE]
@@ -23,7 +23,7 @@
 <br />
 
 <h3>Matching</h3>
-The script compares the two location names without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein distance and turns it into a similarity percentage, then rates the result:
+The script compares the two location names without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein distance and turns it into a similarity percentage, then applies the rating with color-coded results:
 <br /><br />
 
 | Score | Result | Color |
@@ -41,7 +41,7 @@ The variables used for color matching and score ranges can edited by changing th
 <br /><br />
 
 - If you need to change the color matching to tune it to your environment, it can be edited in <ins>lines 201-204</ins>.
-- If you need to change the score range, it can be edited in <ins>lines 133-137</ins> (depending on complexity of the user/computer OU structure).
+- If you need to change the score range, it can be edited in <ins>lines 133-137</ins> (depending on similarity to the two forest (user/computer) structured domain).
 <br />
 
 # ADSearch_Excel
