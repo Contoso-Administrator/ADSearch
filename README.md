@@ -40,8 +40,8 @@ The script compares the two OU paths of the user (SamAccountName) and computer (
 The variables used for color matching and score ranges can edited by changing the variables below:
 <br /><br />
 
-- If you need to change the color matching to tune it to your environment, it can be edited in <ins>lines 201-204</ins>.
-- If you need to change the score range, it can be edited in <ins>lines 133-137</ins> (depending on similarity to the two forest (user/computer) structured domain).
+- If you need to change the color matching to tune it to your environment, it can be edited in <a href="https://github.com/Contoso-Administrator/ADSearch/blob/cfed1e7b07852694d2667bc6c9b0468e93c24b2f/ADSearch.ps1#L201" target="_blank">lines 201-204</a>
+- If you need to change the score range, it can be edited in <a href="https://github.com/Contoso-Administrator/ADSearch/blob/cfed1e7b07852694d2667bc6c9b0468e93c24b2f/ADSearch.ps1#L133" target="_blank">lines 133-137</a> (depending on similarity to the two forest (user/computer) structured domain).
 <br />
 
 # ADSearch_Excel
