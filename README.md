@@ -76,7 +76,7 @@ The headers used for matching can edited by changing the variables below, along 
 
 - Set the <ins>$FullNameHeader</ins> variable for the workbook header that has full user names (ex. John Doe) <ins>line 2</ins>.
 - Set the <ins>$HostnameHeader</ins> variable for the workbook header that has the computer hostname (ex. DESKTOP-1234) <ins>line 3</ins>.
-- Set the <ins>$DomainSuffix</ins> variable to the suffix of your domain <ins>line 7</ins>.
+- Set the <ins>$DomainSuffix</ins> variable to the suffix of your domain <a href="https://github.com/Contoso-Administrator/ADSearch/blob/799ea05bc4585e1c2df99075fa258756372e7a59/ADSearch_Excel.ps1#L7" target="_blank">line 7</a>
 - If you need to change the score range, it can be edited in <ins>lines 109-112</ins> (depending on complexity of the user/computer OU structure).
 <br />
 
