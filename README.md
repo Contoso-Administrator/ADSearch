@@ -23,7 +23,7 @@
 <br />
 
 <h3>Matching</h3>
-The script compares the two location names without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein distance and turns it into a similarity percentage, then applies the rating with color-coded results:
+The script compares the two location names without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein distance by turning the "distance" of the two locations from each other into a similarity percentage ('Score'), then applies the 'Result' with color-coded results:
 <br /><br />
 
 | Score | Result | Color |
