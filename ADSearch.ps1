@@ -184,7 +184,7 @@ while ($true) {
     Write-Host "-- Computer: $computerName --" -ForegroundColor Yellow
     if ($computerError) {
         Write-Warning "Search result not found for computer '$computerName': $computerError"
-        Write-Host "  Example valid computer names (hostname format): WP49993LT, WP46224DT" -ForegroundColor DarkYellow
+        Write-Host "  Example valid computer names (hostname format): TNDOT51LT, 59T2V22DT" -ForegroundColor DarkYellow
     }
     else {
         Write-Host "Canonical Name : $computerCanonical"
