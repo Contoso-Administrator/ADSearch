@@ -23,7 +23,7 @@
 <br />
 
 <h3>Matching</h3>
-The script compares the two OU paths of the user (SamAccountName) and computer (Hostname), without regard to case. Identical names score 100%. Otherwise, it calculates the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance" target="_blank" rel="noopener noreferrer">Levenshtein distance</a> by turning the "distance" from the two OU paths into a similarity percentage ('Score'), then applies the 'Result' with color-coded results:
+The script compares the two OU paths of the user (SamAccountName) and computer (Hostname), without regard to case. Identical names score 100%. Otherwise, it calculates the <a href="https://en.wikipedia.org/wiki/Levenshtein_distance" target="_blank">Levenshtein distance</a> by turning the "distance" from the two OU paths into a similarity percentage ('Score'), then applies the 'Result' with color-coded results:
 <br /><br />
 
 | Score | Result | Color |
