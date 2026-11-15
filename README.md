@@ -74,10 +74,10 @@ Returns the username (SamAccountName) or error result for that lookup (ex. ERROR
 The headers used for matching can edited by changing the variables below, along with the score range:
 <br /><br />
 
-- Set the <ins>$FullNameHeader</ins> variable for the workbook header that has full user names (ex. John Doe) <ins>line 2</ins>.
-- Set the <ins>$HostnameHeader</ins> variable for the workbook header that has the computer hostname (ex. DESKTOP-1234) <ins>line 3</ins>.
+- Set the <ins>$FullNameHeader</ins> variable for the workbook header that has full user names (ex. John Doe) <a href="https://github.com/Contoso-Administrator/ADSearch/blob/02e4c6ef2dfc27e6df60bd4df423c6e0e4ce72fd/ADSearch_Excel.ps1#L2" target="_blank">line 2</a>.
+- Set the <ins>$HostnameHeader</ins> variable for the workbook header that has the computer hostname (ex. DESKTOP-1234) <a href="https://github.com/Contoso-Administrator/ADSearch/blob/02e4c6ef2dfc27e6df60bd4df423c6e0e4ce72fd/ADSearch_Excel.ps1#L3" target="_blank">line 3</a>.
 - Set the <ins>$DomainSuffix</ins> variable to the suffix of your domain <a href="https://github.com/Contoso-Administrator/ADSearch/blob/799ea05bc4585e1c2df99075fa258756372e7a59/ADSearch_Excel.ps1#L7" target="_blank">line 7</a>
-- If you need to change the score range, it can be edited in <ins>lines 109-112</ins> (depending on complexity of the user/computer OU structure).
+- If you need to change the score range, it can be edited in <a href="https://github.com/Contoso-Administrator/ADSearch/blob/02e4c6ef2dfc27e6df60bd4df423c6e0e4ce72fd/ADSearch_Excel.ps1#L109" target="_blank">lines 109-112</a> (depending on complexity of the user/computer OU structure).
 <br />
 
 ><h3>Requirements</h3>
