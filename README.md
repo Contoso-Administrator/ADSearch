@@ -14,7 +14,7 @@
 ```
 
 # ADSearch
-<p>This Active Directory toolkit offers user/computer OU comparisons using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's (for large enterprise IT audits/asset management of complex AD enviroments). Both ADSearch and ADSearch_Excel work by looking up a user and a computer in Active Directory, then compare their OU paths to estimate whether they belong to the same location (it is designed for a three-level OU hierarchy, with separate forests for computers and users). Each tool installs and uses the ActiveDirectory module to find the username (SamAccountName) and computer name (hostname), using the Get-ADUser and Get-ADComputer cmdlets to the retrieve the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory environment before deploying (depending on the similarity of your domain's OU structure).</p>
+<p>This Active Directory toolkit offers user/computer OU comparisons using fuzzy Levenshtein matching to determine if the computer is in an OU that matches the user's (for large enterprise IT audits/asset management of complex AD enviroments). Both ADSearch and ADSearch_Excel work by looking up a user and a computer in Active Directory, then compare their OU paths to estimate whether they belong to the same location (it is designed for a three-level OU hierarchy, with separate forests for computers and users). Each tool installs and uses the ActiveDirectory module to find the username (SamAccountName) and computer name (Hostname), using the Get-ADUser and Get-ADComputer cmdlets to the retrieve the CanonicalNames for matching. It is strongly encouraged to tune this tool to your Active Directory environment before deploying (depending on the similarity of your domain's OU structure).</p>
 <br />
 
 >[!NOTE]
@@ -23,7 +23,7 @@
 <br />
 
 <h3>Matching</h3>
-The script compares two locations without regard to case. Identical names score 100%. Otherwise, it calculates the Levenshtein distance by turning the "distance" of the two locations from each other into a similarity percentage ('Score'), then applies the 'Result' with color-coded results:
+The script compares the two OU paths of the user (SamAccountName) and computer (Hostname), without regard to case. Identical names score 100%. Otherwise, it calculates the [Levenshtein distance([https://docs.github.com](https://en.wikipedia.org/wiki/Levenshtein_distance)) by turning the "distance" from the two OU paths into a similarity percentage ('Score'), then applies the 'Result' with color-coded results:
 <br /><br />
 
 | Score | Result | Color |
