@@ -70,7 +70,7 @@ Returns the username (SamAccountName) or error result for that lookup (ex. ERROR
 >The variable <ins>$DomainSuffix</ins> must be set to the suffix of your domain in <a href="https://github.com/Contoso-Administrator/ADSearch/blob/799ea05bc4585e1c2df99075fa258756372e7a59/ADSearch_Excel.ps1#L7" target="_blank">line 7</a> of ADSearch_Excel.ps1. This is because this portion of the tool is designed to be able to work with multi-domain environments.
 <br />
 
-<h3>Tuning ADSearch_Excel.ps1</h3>
+<h3>Configuring ADSearch_Excel.ps1</h3>
 The headers used for matching can edited by changing the variables below, along with the score range:
 <br /><br />
 
