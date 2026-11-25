@@ -82,10 +82,10 @@ The headers used for matching can edited by changing the variables below, along 
 
 ><h3>Requirements</h3>
 >
+>- Windows PowerShell 5.1 or later.
 >- A domain account that can read user and computer objects.
->- For ADSearch_Excel.ps1 to work, the $DomainSuffix variable needs to be edited to your domain <ins>line 7</ins>.
 >- A domain-joined Windows machine with the 'RSAT: Active Directory module' installed.
 >- Access to the PowerShell Gallery, as the script relies on Install-Module and ImportExcel as a dependency.
->- An Excel workbook (.xlsx) with 'Last Login' and 'Hostname' headers (if variables are left unconfigured) in row 1. 'Last Login' should contain users full names (John Doe) and the 'Hostname' column should contain computer hostnames.
->- This script will only add columns to your workbook, it will not otherwise delete or edit anything.
->- Windows PowerShell 5.1 or later.
+>- For ADSearch_Excel.ps1 to work, the Excel workbook (.xlsx) has to have 'Last Login' and 'Hostname' headers (if variables are left unconfigured) in row 1. 'Last Login' should contain user's full names (John Doe) and the 'Hostname' column should contain computer AD hostnames.
+>- For ADSearch_Excel.ps1 to work, the $DomainSuffix variable needs to be edited to your domain <ins>line 7</ins>.
+>- ADSearch_Excel.ps1 will only add columns to your workbook, it will not otherwise delete or edit anything.
